@@ -1,0 +1,228 @@
+.work {
+    background-color: #141410;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px 0 0;
+}
+
+.intro h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #ffffff;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    font-family: monospace;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    justify-content: center;
+}
+
+.work-section {
+    color: #fff;
+    padding: 3.75rem 1rem;
+    background-color: #151819;
+    margin: 50px 0 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-titlee {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: #c9f31d;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.line {
+    height: 2px;
+    background-color: #c9f31d;
+    width: 3.75rem;
+    border-radius: 5px;
+}
+
+/* Main Title */
+.section-title {
+    font-size: 3.7rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+/* Project Section */
+.company-projects {
+    text-align: center;
+    color: #fff;
+    margin: 2rem 1rem;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #c9f31d;
+    }
+
+    p {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Grid Container */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 ;
+}
+
+/* Individual Project Card */
+.project {
+    background-color: #202020;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #c9f31d;
+            /* Highlight color */
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        color: #ddd;
+        margin-bottom: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            /* Zoom effect on hover */
+            cursor: pointer;
+        }
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+
+    .close {
+        position: absolute;
+        top: -4px;
+        right: 172px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: #c9f31d;
+        }
+    }
+
+    .modal-content {
+        display: block;
+        margin: auto;
+        max-width: 70%;
+        max-height: 70%;
+        border-radius: 8px;
+        background-color: #222;
+
+
+        .modal-header{
+            background-color: #444;
+        }
+
+        .btn-close{
+            color: #fff !important;
+        }
+
+        .modal-footer{
+            background-color: #444;
+        }
+    }
+}
+
+
+
+.modal-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+    button {
+        background-color: #c9f31d;
+        border: none;
+        color: #202020;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        
+        &:hover {
+            background-color: #a7cc1a;
+        }
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .company-projects h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    // .project {
+    //     padding: 1rem;
+    // }
+}

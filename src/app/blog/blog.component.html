@@ -1,0 +1,52 @@
+<section class="blog">
+  <div class="container mainContainer" data-aos="fade-down" data-aos-duration="1500">
+    <div class="intro">
+      <h1>Blog Standard</h1>
+      <div class="breadcrumb">
+        <p style="display: inline; color: #fff;">Home / </p>
+        <p style="display: inline; color: #c9f31a;">&nbsp;Blog Standard</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="blog-content">
+    <div class="blogContainer">
+      <!-- Section Header -->
+      <div style="text-align: center;">
+        <div class="section-header" data-aos="fade-down" data-aos-duration="1500">
+          <span class="line"></span>
+          <h3 class="section-titlee">Complete Blog</h3>
+          <span class="line"></span>
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">Look At My Blog And Give Me <br> Your
+          Feedback</h2>
+      </div>
+    </div>
+    <div class="blog-grid">
+      <div *ngFor="let blog of blogs" class="blog-card" [attr.aria-label]="blog.title" data-aos="fade-up" data-aos-duration="1500">
+        <img [src]="blog.image" [alt]="blog.title" class="blog-img" (error)="onImageError($event)" data-aos="fade-up" data-aos-duration="1500"/>
+        <div class="blog-info">
+          <h3 data-aos="zoom-in" data-aos-duration="1200">{{ blog.title }}</h3>
+          <p data-aos="fade-up" data-aos-duration="1500">{{ blog.description }}</p>
+          <a data-aos="fade-up" data-aos-duration="1500" [href]="blog.link" class="read-more" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-blogs">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="1200">Featured Blogs</h2>
+      <div class="blogs-grid">
+        <div *ngFor="let blog of featuredBlogs" class="featured-blog-card" (click)="navigateToBlog(blog.link)"  data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <img [src]="blog.image" alt="{{ blog.title }}" class="blog-image" data-aos="fade-up" data-aos-duration="2000"/>
+          <div class="featured-blog-content">
+            <h3 class="blog-title" data-aos="zoom-in" data-aos-duration="2000">{{ blog.title }}</h3>
+            <p class="blog-description" data-aos="fade-up" data-aos-duration="2000">{{ blog.description }}</p>
+            <span class="blog-date" data-aos="fade-down" data-aos-duration="2000">{{ blog.date }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

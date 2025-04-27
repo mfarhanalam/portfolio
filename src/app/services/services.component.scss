@@ -1,0 +1,616 @@
+/* General Service Section Styling */
+.service {
+    background-color: #141410;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Main Container */
+.mainContainer {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Intro Styling */
+.intro h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    /* Responsive font size */
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    font-family: monospace;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    /* Responsive font size */
+    justify-content: center;
+}
+
+/* Service List Styling */
+.service-list {
+    padding: 0 20px;
+    margin-bottom: 3.125rem;
+}
+
+/* Service Item Styling */
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 1.25rem 0;
+}
+
+.service-item:first-child {
+    border-top: 1px solid #c9f31d;
+}
+
+.service-number {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    flex-shrink: 0;
+    margin-right: 1.25rem;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-type {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.3125rem;
+}
+
+.service-title {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    /* Responsive font size */
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.service-description {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    /* Responsive font size */
+    color: #ccc;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+}
+
+.service-item:hover {
+    border-bottom: 1px solid #c9f31d;
+}
+
+.service-item:hover .service-title {
+    color: #c9f31d;
+}
+
+.service-item:hover .service-link {
+    background-color: #c9f31d !important;
+    color: #000;
+}
+
+/* Need a Project Section */
+.contact-section {
+    font-family: Arial, sans-serif;
+    background-color: #151819;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1.25rem;
+    // gap: 1.25rem;
+}
+
+// .contact-content {
+//     max-width: 50%;
+// }
+
+.contact-title {
+    font-family: Caveat, cursive;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    /* Responsive font size */
+    color: #c9f31d;
+    margin-bottom: 0.625rem;
+}
+
+.contact-heading h1 {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    /* Responsive font size */
+    font-weight: 500;
+    margin-bottom: 2.1875rem;
+}
+
+.contact-heading:hover {
+    border-bottom: 1px solid #c9f31d;
+    transition: 0.3s;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #333;
+    transition: 0.3s;
+}
+
+.info-item:hover {
+    border-bottom: 1px solid #c9f31d;
+    transition: 0.3s;
+}
+
+.icon {
+    background-color: #c9f31d;
+    border-radius: 50%;
+    min-width: 3.75rem;
+    min-height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9375rem;
+}
+
+.icon i {
+    font-size: 1.375rem;
+    color: #000;
+}
+
+.info-item h4 {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    /* Responsive font size */
+    margin: 0.3125rem 0;
+    color: #999999;
+}
+
+.info-item p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    /* Responsive font size */
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pricing Section */
+.pricing-section {
+    color: #fff;
+    padding: 3.75rem 1.25rem;
+    background-color: #18181902;
+    margin: 50px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-titlee {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    /* Responsive font size */
+    color: #c9f31d;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.line {
+    height: 2px;
+    background-color: #c9f31d;
+    width: 3.75rem;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    /* Responsive font size */
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.pricing-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 1.875rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #c9f31d;
+}
+
+.pricing-card.highlight {
+    background-color: #c9f31d;
+    color: #000;
+    border-color: #000;
+}
+
+.pricing-card.highlight:hover {
+    transform: translateY(-10px);
+    border-color: #000;
+}
+
+.icon-box {
+    background-color: #c9f31d;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.highlight .icon-box {
+    background-color: #333;
+}
+
+.plan-title {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    /* Responsive font size */
+    margin-bottom: 0.9375rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    /* Responsive font size */
+    margin-bottom: 1.25rem;
+}
+
+.price span {
+    font-size: 0.8rem;
+    color: #535252;
+}
+
+.features {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.features li {
+    list-style-type: square;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0.3125rem 0;
+    color: #999;
+}
+
+.features li::marker {
+    color: #c9f31d;
+    font-size: 20px;
+}
+
+.subs-btn {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    /* Responsive font size */
+    display: inline-block;
+    text-transform: capitalize;
+    position: relative;
+    background: var(--base);
+    overflow: hidden;
+    font-family: Kanit, sans-serif;
+    border-radius: 0.3125rem;
+    transition: all 0.5s;
+    color: var(--subtitle);
+    text-align: center;
+}
+
+/* Working Section */
+.working-section {
+    color: #fff;
+    padding: 3.75rem 1.25rem;
+    background-color: #151819;
+}
+
+.working-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.working-title {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    /* Responsive font size */
+    color: #c9f31d;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.working-line {
+    height: 2px;
+    background-color: #c9f31d;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.section-working-title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    /* Responsive font size */
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.working-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.working-card {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.working-card:hover {
+    transform: translateY(-10px);
+    border-color: #c9f31d;
+}
+
+.working-card-title {
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    /* Responsive font size */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.detail {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    /* Responsive font size */
+    margin-bottom: 30px;
+    color: #999999;
+}
+
+.working-features {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.working-features li {
+    list-style-type: square;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    color: #999;
+}
+
+.working-features li::marker {
+    color: #c9f31d;
+    font-size: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 30px 15px;
+    }
+
+    .service {
+        padding: 0 !important;
+    }
+
+    .service-list {
+        padding: 11px !important;
+    }
+
+    .service-item {
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .service-number {
+        margin-bottom: 10px;
+    }
+
+    .service-link {
+        margin-top: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 0.6875rem;
+    }
+
+
+    .contact-content {
+        max-width: 100%;
+    }
+
+    .contact-image {
+        margin-top: 20px;
+    }
+
+    .pricing-grid,
+    .working-grid {
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .working-section {
+        padding: 3.75rem 0.25rem;
+    }
+
+    .pricing-card,
+    .working-card {
+        width: 100%;
+        // max-width: 350px;
+    }
+
+    .section-title,
+    .section-working-title {
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .pricing-section {
+        padding: 3.75rem 0rem;
+    }
+
+    .plan-title,
+    .working-card-title {
+        font-size: 1.5rem;
+    }
+
+    .detail {
+        font-size: 1.2rem;
+    }
+
+    .subs-btn {
+        font-size: 0.875rem;
+        padding: 0.625rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        padding: 20px 10px;
+    }
+
+
+
+    .service {
+        padding: 0 !important;
+    }
+
+    .service-list {
+        padding: 11px !important;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    .service-link {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .contact-heading h1 {
+        font-size: 1.2rem;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 0.6875rem;
+    }
+
+    .contact-title {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .info-item p {
+        font-size: 0.8rem;
+    }
+
+    .section-title,
+    .section-working-title {
+        font-size: 1.5rem;
+    }
+
+    .working-section {
+        padding: 3.75rem 0.25rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .pricing-section {
+        padding: 3.75rem 0rem;
+    }
+
+    .detail {
+        font-size: 1.5rem;
+    }
+
+    .subs-btn {
+        font-size: 0.8125rem;
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .mainContainer {
+        height: 70vh;
+        padding: 50px 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .mainContainer {
+        height: 50vh;
+    }
+
+
+}

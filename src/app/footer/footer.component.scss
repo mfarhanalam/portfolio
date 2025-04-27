@@ -1,0 +1,101 @@
+/* General get-in-touch Styling */
+.get-in-touch {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 3.125rem 1.25rem; /* Converted from 50px 20px */
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.get-in-touch h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem; /* Converted from 20px */
+}
+
+/* Subtitle */
+.get-in-touch p {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem; /* Converted from 20px */
+    color: #ccc;
+}
+
+/* Email Link */
+.get-in-touch .email-link {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem; /* Converted from 40px */
+    color: #c9f31d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.get-in-touch .email-link:hover {
+    color: #a4cc00;
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem; /* Converted from 20px */
+}
+
+/* Social Button Styles */
+.social-btn {
+    background-color: #222;
+    padding: 0.9375rem 1.875rem; /* Converted from 15px 30px */
+    border-radius: 0.3125rem; /* Converted from 5px */
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+    width: 12.5rem; /* Converted from 200px */
+    transition: color 0.3s;
+}
+
+.social-btn .arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.social-btn:hover {
+    background-color: #c9f31d;
+    color: #000;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 991px) {
+    .reply-form,
+    .contact-info {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .get-in-touch h1 {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+
+    .get-in-touch p {
+        font-size: 1rem; /* Adjusted for smaller screens */
+    }
+
+    .get-in-touch .email-link {
+        font-size: 1.2rem; /* Adjusted for smaller screens */
+    }
+
+    .social-btn {
+        width: 100%; /* Full-width buttons for smaller screens */
+    }
+}

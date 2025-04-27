@@ -1,0 +1,84 @@
+<section class="service">
+    <div class="container mainContainer" data-aos="fade-down" data-aos-duration="1500">
+        <div class="intro">
+            <h1>Business Branding</h1>
+            <div class="breadcrumb">
+                <p style="display: inline; color: #fff;">Home / </p>
+                <p style="display: inline; color: #c9f31a;">&nbsp;Business Branding</p>
+            </div>
+        </div>
+    </div>
+    <div class="row hero container-fluid">
+        <div class="col-lg-8 col-md-7 col-sm-12 left-content">
+            <div class="thumb" data-aos="fade-up" data-aos-duration="1500">
+                <img src="/images/service1.png" alt="">
+            </div>
+            <div class="textBox" data-aos="fade-up" data-aos-duration="1500">
+                <h3 data-aos="fade-up" data-aos-duration="1500">About Business Branding Service</h3> <br>
+                <p data-aos="fade-up" data-aos-duration="1500">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                    aut odit aut fugit, sed quia consequuntur
+                    magni voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                </p> <br>
+                <p data-aos="fade-up" data-aos-duration="1500">Quis nostrum exercitationem ullam corporis suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi
+                    reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                    fugiat quo voluptas nulla the Lorem Ipsum generators on the Internet tend to repeat predefined
+                    chunks
+                </p> <br>
+
+                <h3 data-aos="fade-up" data-aos-duration="1500">Specialization & Working Process</h3> <br>
+                <p data-aos="fade-up" data-aos-duration="1500">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. If you are going to use a you need to be sure there isn't anything embarrassing hidden
+                    in the middle of text. All the generators on the Internet tend to repeat predefined chunks as
+                    necessary, Making this the first true generator on the Internet. It uses a dictionary of over
+                    combined with a handful of structures, to generate Lorem Ipsum which looks reasonable. The generated
+                    Lorem Ipsum is therefore always free from injected humour, or non-characteristic words etc.</p>
+            </div> <br><br>
+
+            <div class="video-card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="images/ser-dv2.png" alt="Video Thumbnail" class="video-image" />
+                <a href="https://youtu.be/dvDBwi1AohM?si=2VyMw1UN-5cwJwtK" target="_blank" class="play-button">
+                    <i class="bi bi-play-fill"></i>
+                </a>
+            </div> <br> <br>
+
+            <section class="faq-section">
+                <h3 data-aos="fade-up" data-aos-duration="1500">Questions? You're Covered</h3>
+                <div *ngFor="let item of accordionItems; let i = index" class="accordion-item" data-aos="fade-up" data-aos-duration="1500">
+                    <button data-aos="fade-up" data-aos-duration="1500" class="accordion-header" [class.active]="activeIndex === i" (click)="toggleAccordion(i)">
+                        {{ item.title }}
+                        <span class="icon" [class.active]="activeIndex === i"><i class="bi bi-arrow-down"></i></span>
+                    </button>
+                    <div class="accordion-body" [class.open]="activeIndex === i" data-aos="fade-up" data-aos-duration="1500">
+                        {{ item.content }}
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-12 right-content">
+            <div class="right-box" data-aos="fade-down" data-aos-duration="1500">
+                <h3 data-aos="fade-up" data-aos-duration="1500">Service List</h3>
+                <div class="link-box" *ngFor="let service of services" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="#">
+                        {{ service.name }}
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="/images/ser-detialcontact.png" alt="Contact Image" class="card-image" />
+                <a href="/contact" class="contact-btn">Contact Me →</a>
+            </div>
+
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,74 @@
+<section class="work">
+    <div class="container mainContainer" data-aos="fade-down" data-aos-duration="1500">
+        <div class="intro">
+            <h1>My Work & Portfolio</h1>
+            <div class="breadcrumb">
+                <p style="display: inline; color: #fff;">Home / </p>
+                <p style="display: inline; color: #c9f31a;">&nbsp;Work</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="work-section">
+        <div class="workContainer">
+            <!-- Section Header -->
+            <div style="text-align: center;">
+                <div class="section-header" data-aos="fade-down" data-aos-duration="1500">
+                    <span class="line"></span>
+                    <h3 class="section-titlee">Complete Project</h3>
+                    <span class="line"></span>
+                </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">Look At My Portfolio And Give Me <br> Your Feedback</h2>
+            </div>
+        </div>
+
+        <section class="company-projects">
+            <h2 data-aos="zoom-in" data-aos-duration="1500">Projects at Bizmobia</h2>
+            <p data-aos="fade-up" data-aos-duration="1500"> As a Senior Frontend Developer, I contributed to various projects at Bizmobia, focusing on user-centric
+                design and seamless functionality.</p>
+
+            <!-- Grid Container -->
+            <div class="projects-grid">
+                <!-- Loop through the projects -->
+                <div class="project" *ngFor="let project of projects" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 data-aos="fade-up" data-aos-duration="1500">{{ project.title }}</h3>
+                    <p data-aos="fade-up" data-aos-duration="1500">{{ project.description }}</p>
+                    <p data-aos="fade-up" data-aos-duration="1500"> <strong>Technologies:</strong> {{ project.technologies }}</p>
+                    <!-- Image with click event to open the modal -->
+                    <img [src]="project.image" alt="Project Image" class="project-img"
+                        (click)="openImageModal(project.imageUrls)" data-aos="fade-up" data-aos-duration="1500"/>
+                </div>
+            </div>
+
+            <!-- Modal for images -->
+
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                (click)="closeModal()"></button>
+                        </div>
+
+                        <!-- Modal Body with Image -->
+                        <div class="modal-body text-center">
+                            <img [src]="currentImage" class="img-fluid" alt="Project Image"
+                                style="max-height: 500px; object-fit: contain;" />
+                        </div>
+
+                        <!-- Modal Footer with Navigation Buttons -->
+                        <div class="modal-footer modal-navigation">
+                            <button type="button" class="btn btn-secondary" (click)="previousImage()">
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-secondary" (click)="nextImage()">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>

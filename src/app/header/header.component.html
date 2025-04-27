@@ -1,0 +1,132 @@
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Matias Logo" />
+        </div>
+
+        <!-- Nav Menu with Toggle Binding -->
+        <nav class="nav-menu" [ngClass]="{ 'active': isMenuOpen }">
+            <a (click)="navigateTo('home','home')" [ngClass]="{'activeLink': selectedLink === 'home'}">Home</a>
+            <a id="about" (click)="navigateTo('home','abouts');"
+                [ngClass]="{'activeLink': selectedLink === 'about'}">About</a>
+            <a (click)="navigateTo('work', null)" [ngClass]="{'activeLink': selectedLink === 'work'}">Work</a>
+
+            <div class="dropdown">
+                <a class="dropdown-link">Services <i style="font-size: 12px;" class="bi bi-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a (click)="navigateTo('services',null)"
+                        [ngClass]="{'activeLink': selectedLink === 'services' }">Service
+                     </a>
+                    <a (click)="navigateTo('services-details',null)"
+                        [ngClass]="{'activeLink': selectedLink === 'services-details' }">Service Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- <a [ngClass]="{'activeLink': selectedLink === 'testimonial'}" aria-disabled="true" class="nav-link disabled"
+                style="color: #555454;">Testimonial
+            </a> -->
+
+            <a (click)="navigateTo('blog',null)" [ngClass]="{'activeLink': selectedLink === 'blog'}">Blog</a>
+
+
+            <a (click)="navigateTo('contact',null)" [ngClass]="{'activeLink': selectedLink === 'contact'}">Contacts</a>
+        </nav>
+
+        <div class="cta-buttons">
+            <button class="talk-btn" (click)="navigateTo('contact',null)">Let's Talk →</button>
+            <!-- Offcanvas Trigger Button -->
+            <i style="color: #fff; font-size: 2rem; color:#c9f31a;" (click)="openCanvas('rightsideCanvas')"
+                class="bi bi-person "></i>
+            <i style="font-size: 2rem; color:#c9f31a;" (click)="openCanvas('sideDrawer')"
+                class="bi bi-list for-mobile"></i>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sideDrawer" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Farhan Menu</h5>
+        <button type="button" style="background-color: #c9f31d;" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="#" (click)="navigateTo('home','home')" [ngClass]="{'activeLink': selectedLink === 'home'}"
+            class="offcanvas-link">Home</a>
+        <a id="about" (click)="navigateTo('home','abouts'); " [ngClass]="{'activeLink': selectedLink === 'about'}"
+            class="offcanvas-link">About</a>
+        <a href="work" (click)="navigateTo('work',null)" [ngClass]="{'activeLink': selectedLink === 'work'}"
+            class="offcanvas-link">Work</a>
+        <div class="dropdown">
+            <a class="offcanvas-link">Services <i style="font-size: 12px;" class="bi bi-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="services" (click)="navigateTo('services',null)"
+                    [ngClass]="{'activeLink': selectedLink === 'services' }">Services</a>
+                <a href="services-details" (click)="navigateTo('services-details',null)"
+                    [ngClass]="{'activeLink': selectedLink === 'services-details'}">Service Details</a>
+            </div>
+        </div>
+        <!-- <a [ngClass]="{'activeLink': selectedLink === 'testimonial'}" class="offcanvas-link nav-link disabled"
+            aria-disabled="true" style="color: #555454;">Testimonial</a> -->
+        <a href="blog" (click)="navigateTo('blog',null)" [ngClass]="{'activeLink': selectedLink === 'blog'}"
+            class="offcanvas-link">Blog</a>
+        <a href="contact" (click)="navigateTo('contact',null)" [ngClass]="{'activeLink': selectedLink === 'contact'}"
+            class="offcanvas-link">Contacts</a>
+    </div>
+</div>
+
+
+<!--  2nd offcanvas -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="rightsideCanvas" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <button type="button" style="background-color: #c9f31d" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Matias Logo" />
+        </div>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim
+            ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+
+        <div class="sub__contact-left d-grid">
+            <div class="sub__contac-item">
+                <div class="content">
+                    <span class="address d-block"> address </span>
+                    <span class="textp"> Mehdipatnam, Hyderabad, Telangana India</span>
+                </div>
+            </div>
+            <div class="sub__contac-item">
+                <div class="content">
+                    <span class="address d-block"> email </span>
+                    <a class="textp" href="/">farhan77070&#64;.com </a>
+                </div>
+            </div>
+            <div class="sub__contac-item">
+                <div class="content">
+                    <span class="address d-block"> call now </span>
+                    <a class="textp" href="/"> +917707039399 </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub__contact-right  position-relative">
+            <ul class="social d-flex gap-3">
+                <li><a href="https://www.facebook.com/mohamad.farhan.77770194?rdid=WYtSWH3xvUJXoigu&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F182wvuzmET%2F#"
+                        target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://x.com/AlamFarhanMd?t=iK2k9gCJS0yK-aq6jvjFPg&s=08" target="_blank"><i
+                            class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/md-farhan-alam-97a174237" target="_blank"><i
+                            class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mdfarhanlm/?igsh=NnBpdmJ6dXJqMzdt" target="_blank"><i
+                            class="bi bi-youtube"></i></a></li>
+            </ul>
+        </div>
+        <button class="talk-btn2" (click)="navigateTo('contact',null)">Let's Talk →</button>
+
+    </div>
+</div>

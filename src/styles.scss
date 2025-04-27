@@ -1,0 +1,141 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+:root {
+    --primary-color: #c9f31a;
+    --secondary-color: #151819;
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 0.9rem;
+  }
+body {
+    overflow-x: hidden !important;
+}
+
+.mainContainer {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        height: 70vh;
+        padding: 50px 20px;
+    }
+
+    .intro h1 {
+        font-size: 50px;
+        /* Slightly smaller for tablets */
+    }
+
+    .breadcrumb {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        padding: 30px 15px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+        /* Smaller for mobile devices */
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainContainer {
+        padding: 20px 10px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+        /* For smaller screens */
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.for-desktop {
+    display: block;
+}
+.for-mobile {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .for-desktop {
+        display: none !important;
+    }
+    .for-mobile {
+        display: block !important;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .mainContainer {
+      height: 50vh;
+    }
+  
+    .intro h1 {
+      font-size: 28px;
+    }
+  
+    .breadcrumb {
+      font-size: 12px;
+    }
+}  
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+      height: 60vh;
+      padding: 0 10px;
+    }
+  
+    .intro h1 {
+      font-size: 36px;
+    }
+    
+    .breadcrumb {
+      font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .intro h1 {
+      font-size: 50px;
+    }
+    .breadcrumb {
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .intro h1 {
+      font-size: 30px;
+    }
+    .breadcrumb {
+      font-size: 12px;
+    }
+}

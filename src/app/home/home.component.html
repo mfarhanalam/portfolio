@@ -1,0 +1,251 @@
+<div class="banner" id="home">
+    <div class="scroll-down" data-aos="fade-down" data-aos-duration="1500">
+        <span class="contact-number"><img src="images/dial.png" alt=""> +02-574-238-301</span>
+        <p>SCROLL DOWN</p>
+        <div class="scroll-icon"><img src="images/downimg.png" alt="Scroll Icon" /></div>
+    </div>
+    <div class="social-links" data-aos="fade-down" data-aos-duration="1500">
+        <p >FOLLOW ME</p>
+        <div class="scroll-icon"><img src="images/downimg.png" alt="Scroll Icon" /></div>
+        <a href="https://www.facebook.com/mohamad.farhan.77770194?rdid=WYtSWH3xvUJXoigu&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F182wvuzmET%2F#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/AlamFarhanMd?t=iK2k9gCJS0yK-aq6jvjFPg&s=08" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/md-farhan-alam-97a174237" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/mdfarhanlm/?igsh=NnBpdmJ6dXJqMzdt" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <div class="row hero container-fluid" data-aos="fade-down" data-aos-duration="1500">
+        <div class="col-lg-8 col-md-7 col-sm-12 left-content">
+            <div class="main-title">
+                <div class="availability">
+                    <p>Currently Available For Freelance</p>
+                    <p>Worldwide <i class="bi bi-arrow-up-right"></i></p>
+                    <p class="hrLine"></p>
+                </div>
+                <h1>Creative Visual <br /><span>Designer</span></h1>
+            </div>
+            <button class="work-process-btn">
+                <span class="play-icon">▶</span> Work Process
+            </button>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-12 right-content">
+            <img src="images/farhan-banner.jpg" alt="Designer" class="designer-image" />
+        </div>
+    </div>
+</div>
+
+<ngx-slick-carousel class="carousel scrolling-text" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="">
+    </div>
+</ngx-slick-carousel>
+
+
+<!-- /*==================== About Section ===================== */ -->
+<section id="about">
+    <div class="describtion">
+        <div class="about-detail" >
+            <img src="images/star.png" alt="" data-aos="zoom-in" data-aos-duration="1500">
+            <p data-aos="fade-up" data-aos-duration="1500">I'm Farhan, a passionate Frontend Developer & UI/UX Designer based in RGPV, India. Specializing in
+                Angular and responsive design, I create user-friendly, visually appealing web solutions. Ready to take
+                on any project, I aim to bring creativity and innovation to every design challenge.</p>
+        </div>
+        <div class="about-tab" style="margin: auto;width: 100%;">
+            <ul style="text-align: center;">
+                <li (click)="tabbar('abouts')" [class.active]="activeTab === 'abouts'" class="tab-bar" id="abouts">
+                    About</li>
+                <li (click)="tabbar('experience')" [class.active]="activeTab === 'experience'" class="tab-bar"
+                    id="experience">Experience</li>
+                <li (click)="tabbar('education')" [class.active]="activeTab === 'education'" class="tab-bar"
+                    id="education">Education</li>
+                <li (click)="tabbar('skills')" [class.active]="activeTab === 'skills'" class="tab-bar" id="skills">
+                    Skills
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- =====================about=================== -->
+    <section *ngIf="activeTab==='abouts'" id="aboutus">
+        <div class="personal-info-container">
+            <div class="personal-info-image" data-aos="fade-down" data-aos-duration="500">
+                <img src="images/personalinfo.png" alt="Person Image" />
+            </div>
+            <div class="personal-info-content">
+                <h2 data-aos="fade-down" data-aos-duration="500">Personal Info</h2>
+                <p data-aos="fade-up" data-aos-duration="500">I am a passionate Frontend Developer with expertise in Angular and UI/UX design. I love
+                    creating responsive, user-friendly websites and constantly learning new technologies to stay ahead
+                    in the industry.</p>
+                <!-- <p>Achievements: Awarded "Best UI/UX Designer" at Bizmobia, Completed Advanced JavaScript Certification.
+                </p> -->
+                <p data-aos="fade-up" data-aos-duration="500">Hobbies: Cricket, Football, Photography, Tech Blogging.</p>
+                <div class="info-boxes" >
+                    <div class="info-box" data-aos="zoom-in">
+                        <p>Email</p>
+                        <span>farhan77070&#64;Gmail.com</span>
+                    </div>
+                    <div class="info-box" data-aos="zoom-in">
+                        <p>Phone</p>
+                        <span>+917707039399</span>
+                    </div>
+                    <div class="info-box" data-aos="zoom-in">
+                        <p>Address</p>
+                        <span>Mehdipatnam, Hyderabad, Telangana India</span>
+                    </div>
+                    <div class="info-box" data-aos="zoom-in">
+                        <p>Follow</p>
+                        <a href="https://www.facebook.com/mohamad.farhan.77770194?rdid=WYtSWH3xvUJXoigu&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F182wvuzmET%2F#"
+                            target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/AlamFarhanMd?t=iK2k9gCJS0yK-aq6jvjFPg&s=08" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/md-farhan-alam-97a174237" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mdfarhanlm/?igsh=NnBpdmJ6dXJqMzdt" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- =====================about end=================== -->
+
+    <!-- ======================experience===================== -->
+    <section *ngIf="activeTab==='experience'">
+        <div class="education-container">
+            <div class="education-image" data-aos="fade-down" data-aos-duration="1500">
+                <img src="images/personalinfo.png" alt="Person Image" />
+            </div>
+            <div class="education-content">
+                <h2 data-aos="fade-down" data-aos-duration="500">My Experience</h2>
+                <p data-aos="fade-up" data-aos-duration="500">With a strong background in Computer Science & Engineering, I have worked on various web development
+                    projects and contributed to UI/UX design, improving user interaction and overall experience.</p>
+
+                <div class="education-items">
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2023-Present</span>
+                        <div>
+                            <p class="course">Senior Frontend Developer</p>
+                            <p class="institution">Bizmobia</p>
+                            <p class="responsibility">Frontend development with <br> Angular.</p>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2022-2023</span>
+                        <div>
+                            <p class="course">Frontend Developer Intern</p>
+                            <p class="institution">Bizmobia</p>
+                            <p class="responsibility">Responsive web design.</p>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2021-2022</span>
+                        <div>
+                            <p class="course">Web Development Intern</p>
+                            <p class="institution">Freelance Projects</p>
+                            <p class="responsibility">Client website development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ======================experience end===================== -->
+
+    <!-- ======================education ===================== -->
+    <section *ngIf="activeTab==='education'">
+        <div class="education-container ">
+            <div class="education-image" data-aos="fade-down" data-aos-duration="500">
+                <img src="images/personalinfo.png" alt="Person Image" />
+            </div>
+            <div class="education-content">
+                <h2 data-aos="fade-down" data-aos-duration="500">My Education</h2>
+                <p data-aos="fade-up" data-aos-duration="500">Currently, I’m pursuing B.Tech in Computer Science & Engineering at RGPV University, after completing
+                    my Diploma in the same field from Maulana Azad National Urdu University. My journey began with 10th
+                    Grade at Janta High School, where I developed a strong foundation for my passion in technology. I’m
+                    constantly exploring new concepts and innovations, striving to stay ahead in the dynamic tech world.
+                </p>
+
+                <div class="education-items">
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2018-2019</span>
+                        <div>
+                            <p class="course">10th Grade</p>
+                            <p class="institution">Janta High School, Panapur, Dharmapur, Vaishali, Bihar</p>
+                            <!-- <p class="marks">Marks: 335/500</p> -->
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2019-2022</span>
+                        <div>
+                            <p class="course">Diploma in Computer Science & Engineering</p>
+                            <p class="institution">Maulana Azad National Urdu University, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="zoom-in">
+                        <span class="year">2022-Present</span>
+                        <div>
+                            <p class="course">B.Tech in Computer Science & Engineering</p>
+                            <p class="institution">RGPV University, Bhopal (Lateral Entry)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ======================education end===================== -->
+
+    <!-- ======================Skill ===================== -->
+    <section *ngIf="activeTab==='skills'">
+        <div class="skills-container row">
+            <div class="skills-image col-sm-12 col-xs-12 col-md-6 col-lg-6 " data-aos="fade-down" data-aos-duration="500">
+                <img src="images/personalinfo.png" alt="Person Image" />
+            </div>
+            <div class="skills-content col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                <h2 data-aos="fade-down" data-aos-duration="500">My Skills</h2>
+                <p data-aos="fade-up" data-aos-duration="500">With a strong foundation in frontend development, I specialize in HTML, CSS, TypeScript, and Angular.
+                    I am proficient in responsive design, ensuring seamless user experiences across devices.
+                    Additionally, I am experienced in UI/UX design, problem-solving, and collaborative teamwork.</p>
+
+                <div class="skills-grid">
+                    <div class="skill-card circle_img" data-aos="zoom-in">
+                        <img src="images/html.png" alt="Html Icon" />
+                        <div class="skill-details">
+                            <p class="skill-name">HTML</p>
+                            <p class="skill-level">90%</p>
+                        </div>
+                    </div>
+                    <div class="skill-card circle_img" data-aos="zoom-in">
+                        <img src="images/css.png" alt="Css Icon" />
+                        <div class="skill-details">
+                            <p class="skill-name">CSS</p>
+                            <p class="skill-level">95%</p>
+                        </div>
+                    </div>
+                    <div class="skill-card circle_img" data-aos="zoom-in">
+                        <img src="images/ts.jpeg" alt="Ts Icon" />
+                        <div class="skill-details">
+                            <p class="skill-name">TypeScript</p>
+                            <p class="skill-level">50%</p>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <img src="images/bootstrap.png" alt="Bootstrap Icon" />
+                        <div class="skill-details">
+                            <p class="skill-name">Bootstrap</p>
+                            <p class="skill-level">97%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ======================Skill end===================== -->
+
+
+</section>
+
+<!-- /*==================== About Section end ===================== */ -->

@@ -1,0 +1,186 @@
+<section class="service">
+    <div class="container mainContainer" data-aos="fade-down" data-aos-duration="1500">
+        <div class="intro">
+            <h1>Services All</h1>
+            <div class="breadcrumb">
+                <p style="display: inline; color: #fff;">Home / </p>
+                <p style="display: inline; color: #c9f31a;">&nbsp;Business Branding</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-list">
+        <div class="service-item" *ngFor="let service of services" data-aos="fade-up" data-aos-duration="1500">
+            <div class="service-number">{{ service.number }}</div>
+            <div class="service-content">
+                <p class="service-type">{{ service.type }}</p>
+                <h2 class="service-title">{{ service.title }}</h2>
+                <p class="service-description">{{ service.description }}</p>
+            </div>
+            <a [href]="service.link" class="service-link">
+                <span class="link-icon">↗</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- // Need a Project -->
+    <section class="row contact-section">
+        <div class="contact-content col-lg-8 col-md-8 col-sm-12">
+            <div class="contact-heading">
+                <h3 class="contact-title" data-aos="fade-down" data-aos-duration="1500">Need a Project?</h3>
+                <h1 class="head" data-aos="fade-up" data-aos-duration="1500">Let's Work Together. Fixed A Meeting</h1>
+            </div>
+            <div class="contact-info">
+                <div class="info-item" data-aos="zoom-in-left" data-aos-duration="1500">
+                    <div class="icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>farhan77070&#64;Gmail.Com</p>
+                    </div>
+                </div>
+                <div class="info-item" data-aos="zoom-in-right" data-aos-duration="1500">
+                    <div class="icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Mehdipatnam, Hyderabad, Telangana India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-image col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+            <img src="images/serviceproject.png" alt="Working Desk">
+        </div>
+    </section>
+
+    <!-- /* Pricing  General Styles */ -->
+    <section class="pricing-section">
+        <div class="container priceContainer">
+            <!-- Section Header -->
+            <div style="text-align: center;">
+                <div class="section-header" data-aos="fade-down" data-aos-duration="1500">
+                    <span class="line"></span>
+                    <h3 class="section-titlee">Choose Your Plan</h3>
+                    <span class="line"></span>
+                </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">The Best Pricing Plans To Get Your Best</h2>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="pricing-grid" data-aos="fade-up" data-aos-duration="1500">
+                <!-- Basic Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="icon-box" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/basicplan.png" alt="Basic Plan">
+                    </div>
+                    <h3 class="plan-title" data-aos="fade-up" data-aos-duration="1500">Basic Plan</h3>
+                    <p class="price" data-aos="fade-up" data-aos-duration="1500">$35<span>/Per Month</span></p>
+                    <hr>
+                    <ul class="features" data-aos="fade-up" data-aos-duration="1500">
+                        <li data-aos="fade-up" data-aos-duration="1500">Web Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Mobile App Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Graphic Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">SEO Optimization</li>
+                    </ul>
+                    <button class="subs-btn" data-aos="fade-up" data-aos-duration="1500">Start My Project Now</button>
+                </div>
+
+                <!-- Ultra Plan -->
+                <div class="pricing-card highlight" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="icon-box" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/ultraplan.png" alt="Ultra Plan">
+                    </div>
+                    <h3 class="plan-title" data-aos="fade-up" data-aos-duration="1500">Ultra Plan</h3>
+                    <p class="price" data-aos="fade-up" data-aos-duration="1500">$65<span>/Per Month</span></p>
+                    <hr>
+                    <ul class="features" data-aos="fade-up" data-aos-duration="1500">
+                        <li data-aos="fade-up" data-aos-duration="1500">Web Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Mobile App Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">UI/UX Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Graphic Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">SEO Optimization</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Project Management</li>
+                    </ul>
+                    <button class="subs-btn" data-aos="fade-up" data-aos-duration="1500">Start My Project Now</button>
+                </div>
+
+                <!-- Gold Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="icon-box" data-aos="fade-up" data-aos-duration="1500" >
+                        <img src="images/goldplan.png" alt="Gold Plan">
+                    </div>
+                    <h3 class="plan-title" data-aos="fade-up" data-aos-duration="1500">Gold Plan</h3>
+                    <p class="price" data-aos="fade-up" data-aos-duration="1500">$95<span>/Per Month</span></p>
+                    <ul class="features">
+                        <hr>
+                        <li data-aos="fade-up" data-aos-duration="1500">Web Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Mobile App Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">UI/UX Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Graphic Design</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">SEO Optimization</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Project Management</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Brand Strategy</li>
+                    </ul>
+                    <button class="subs-btn" data-aos="fade-up" data-aos-duration="1500">Start My Project Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- /* working in progress  */ -->
+    <section class="working-section">
+        <div class="container workingContainer">
+            <!-- Section Header -->
+            <div style="text-align: center;">
+                <div class="working-header" data-aos="fade-down" data-aos-duration="1500">
+                    <span class="working-line"></span>
+                    <h3 class="working-title">Working Process</h3>
+                    <span class="working-line"></span>
+                </div>
+                <h2 class="section-working-title" data-aos="fade-up" data-aos-duration="1500">Your Dream Website In Just Few Steps</h2>
+            </div>
+
+            <!-- Steps Cards Grid -->
+            <div class="working-grid">
+                <!-- Concept -->
+                <div class="working-card">
+                    <h3 class="working-card-title" data-aos="fade-up" data-aos-duration="1500">Concept</h3>
+                    <p class="detail" data-aos="fade-up" data-aos-duration="1500">Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                    <ul class="working-features">
+                        <li data-aos="fade-up" data-aos-duration="1500">Reviewing any existing branding</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Target audience and competitors research</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Developing a strategy</li>
+                    </ul>
+                </div>
+                <!-- Design -->
+                <div class="working-card">
+                    <h3 class="working-card-title" data-aos="fade-up" data-aos-duration="1500">Design</h3>
+                    <p class="detail" data-aos="fade-up" data-aos-duration="1500">Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                    <ul class="working-features">
+                        <li data-aos="fade-up" data-aos-duration="1500">Developing wireframes and mockup</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Choosing typography, color palettes,</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Refining the design</li>
+                    </ul>
+                </div>
+                <!-- Webflow -->
+                <div class="working-card">
+                    <h3 class="working-card-title" data-aos="fade-up" data-aos-duration="1500">Webflow</h3>
+                    <p class="detail" data-aos="fade-up" data-aos-duration="1500">Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                    <ul class="working-features">
+                        <li data-aos="fade-up" data-aos-duration="1500">Testing the website thoroughly launch</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Choosing typography, color palettes,</li>
+                        <li data-aos="fade-up" data-aos-duration="1500">Refining the design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
